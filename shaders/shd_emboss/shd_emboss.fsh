@@ -6,11 +6,11 @@ uniform float strength;
 uniform float size;
 
 void main() {
-    vec2 texel = 1.0 / resolution;
+    vec2 texel = 1.0 / resolution * size;
     
     vec3 color = vec3(0.5, 0.5, 0.5);
-    color -= texture2D(gm_BaseTexture, v_vTexcoord - texel).rgb;
-    color += texture2D(gm_BaseTexture, v_vTexcoord + texel).rgb;
+    color -= texture2D(gm_BaseTexture, v_vTexcoord - texel).rgb * strength;
+    color += texture2D(gm_BaseTexture, v_vTexcoord + texel).rgb * strength;
     
     color = vec3((color.r + color.g + color.b) / 3.0);
     
