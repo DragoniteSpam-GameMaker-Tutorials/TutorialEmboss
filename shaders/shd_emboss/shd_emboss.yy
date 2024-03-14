@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "shd_emboss",
-  "parent": {
-    "name": "TutorialEmboss",
-    "path": "TutorialEmboss.yyp",
+  "$GMShader":"",
+  "%Name":"shd_emboss",
+  "name":"shd_emboss",
+  "parent":{
+    "name":"TutorialEmboss",
+    "path":"TutorialEmboss.yyp",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

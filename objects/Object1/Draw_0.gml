@@ -1,7 +1,7 @@
-if (keyboard_check(vk_right)) size += 0.001;
-if (keyboard_check(vk_left)) size -= 0.001;
-if (keyboard_check(vk_pageup)) strength += 0.001;
-if (keyboard_check(vk_pagedown)) strength -= 0.001;
+if (keyboard_check(vk_right)) size += 0.0001;
+if (keyboard_check(vk_left)) size -= 0.0001;
+if (keyboard_check(vk_up)) strength += 0.0001;
+if (keyboard_check(vk_down)) strength -= 0.0001;
 
 gpu_set_texfilter(true);
 

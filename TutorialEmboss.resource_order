@@ -1,6 +1,6 @@
 {
-  "FolderOrderSettings": [],
-  "ResourceOrderSettings": [
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
     {"name":"spr_conservatory","order":26,"path":"sprites/spr_conservatory/spr_conservatory.yy",},
     {"name":"Object1","order":15,"path":"objects/Object1/Object1.yy",},
     {"name":"spr_bunny","order":18,"path":"sprites/spr_bunny/spr_bunny.yy",},

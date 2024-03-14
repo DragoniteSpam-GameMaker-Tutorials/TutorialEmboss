@@ -6,5 +6,16 @@ uniform float strength;
 uniform float size;
 
 void main() {
-    gl_FragColor = texture2D(gm_BaseTexture, v_vTexcoord);
+    vec2 texel = 1.0 / resolution;
+    
+    vec3 color = vec3(0.5, 0.5, 0.5);
+    color -= texture2D(gm_BaseTexture, v_vTexcoord - texel).rgb;
+    color += texture2D(gm_BaseTexture, v_vTexcoord + texel).rgb;
+    
+    color = vec3((color.r + color.g + color.b) / 3.0);
+    
+    gl_FragColor.rgb = color;
+    
+    
+    gl_FragColor.a = texture2D(gm_BaseTexture, v_vTexcoord).a;
 }
